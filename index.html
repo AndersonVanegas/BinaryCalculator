@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="calculadora">
+        <div class="screen"><p id="letras"></p></div>
+        <div class="botones">
+            <div>
+                <button class="boton" value="7" onclick="numero(this)"></button>
+                <button class="boton" value="8" onclick="numero(this)"></button>
+                <button class="boton" value="9" onclick="numero(this)"></button>
+                <button class="boton" value="÷" onclick="signo(this)"></button>
+                <button class="boton" value="BI" id="botonB"></button>
+            </div>
+
+            <div>
+                <button class="boton" value="4" onclick="numero(this)"></button>
+                <button class="boton" value="5" onclick="numero(this)"></button>
+                <button class="boton" value="6" onclick="numero(this)"></button>
+                <button class="boton" value="x" onclick="signo(this)"></button>
+            </div>
+
+            <div>
+                <button class="boton" value="1" onclick="numero(this)"></button>
+                <button class="boton" value="2" onclick="numero(this)"></button>
+                <button class="boton" value="3" onclick="numero(this)"></button>
+                <button class="boton" value="+" onclick="signo(this)"></button>
+            </div>
+
+            <div>
+                <button class="boton" value="0" onclick="numero(this)"></button>
+                <button class="boton" value="=" onclick="igual()"></button>
+                <button class="boton" value="C" onclick="Borrar()"></button>
+                <button class="boton" value="-" onclick="signo(this)"></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
